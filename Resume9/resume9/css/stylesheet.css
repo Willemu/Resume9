@@ -1,0 +1,300 @@
+/*comment*/
+
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
+       }
+
+/*comment*/
+
+header {
+  text-align: center;
+  justify-content: center;
+        }
+
+/*comment*/
+
+body {
+  font-family: sans-serif;
+  font-size:110%;
+  background-color: #FCF7F8;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+      }
+
+/*comment*/
+    
+footer {
+  padding: 1rem;
+  background-color: #343330;
+  background-image: url(../images/plain_blue_background.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  list-style-type: none;
+        }
+
+/*comment*/
+
+#heading {
+  font-family: sans-serif;
+  background-image: url(../images/plain_blue_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #343330;
+  padding: 1rem;
+  color: white;
+          }
+
+/*comment*/
+
+#profilephoto {
+  display: inline-block; position: relative;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 2px solid #D1603D;
+               }
+
+/*comment*/
+
+#navbar {
+  color: black;
+  font-weight: bold;
+  background-image: url(../images/silver_pilar_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #45462A;
+  width: 15%;
+  padding: 3rem;
+         }
+
+/*comment*/
+
+.navlist {
+  color: white;
+  list-style-type: none;
+  padding-left: 0%;
+          }
+
+/*comment*/
+ 
+#content {
+  padding: 1rem;
+  width: 80%;
+  margin: 1rem;
+          } 
+
+/*comment*/
+
+.contacts {
+  padding: 1%;
+  margin: 0.5rem;
+           }
+
+/*comment*/
+
+.icons {
+  width: 3rem;
+  margin: 2rem;
+  height: auto;
+  padding-top: 0.5rem;
+  animation-name: animationicons;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+        }
+
+/*comment*/
+
+@keyframes animationicons {
+  0%   {border-radius: 0%;}
+  25%  {border-radius: 100%;
+        transform: rotate(90deg);}
+  50%  {background-color: blue;
+        transform: rotate(180deg);}
+  100% {background-color: gold;
+        transform: rotate(360deg);}
+                            }
+
+ /*change the color of the text when the mouse hovers over it*/
+
+:hover {
+  color: black;
+        }
+
+/*comment*/
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+      }
+
+/*comment*/
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+      }
+
+/*comment*/
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+    }
+
+/*comment*/
+    
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+     }
+     
+/*comment*/
+   
+.imglink1 {
+  text-decoration: none !important;
+            } 
+            
+/*Testing the effect on adding the image tag in css for responsive
+ design. Can also add the max widht property = scale the image up 
+ to the max of its actual sixe - when it reached it max resolution
+  it will stop scalling. It is better to use the max-width property
+  to limit to the image size, otherwise the image gets distorted. 
+  Font size can aslo be made smaller to adapt to smaller browsers 
+  by using the following html insert - 
+  <h1 style="font-size:10vw">Hello World</h1>  */
+
+img {
+  width: 100%;
+}
+
+/* Media Queries - 
+If an id and a class is applied in the same line the id will 
+always take preference.
+Media queries are always displayed at the bottom of the css
+Below is a media query that changes the color of the body to demonstrate
+device size changes*/
+
+/*code for mobile devices smaller than 600px*/
+body { background-color: gray; }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   body { background-color: grey; }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   body { background-color: silver; }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   body { background-color: lightblue; }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   body { background-color: whitesmoke; }
+}
+
+/* Following the addition of the css grid content to the html
+you load the css components starting with the grid-container 
+label to link it to the html*/
+
+/*Important to specify a size for each column*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: grey;
+  padding: 10px;
+}
+
+/*Now select all the divs that are children of the class
+The grid template columns determines your layout and can be
+replaced by a percentage as well i.e. auto auto 30% or 5px*/
+
+.grid-container > div {
+  font-family: sans-serif;
+  font: size 1.5em;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+                        }
+
+/*Now by using media quries you can style your grid
+ and make sure is has logic to follow when the device
+  sizes changes*/
+
+/* large screens*/
+
+ @media screen and (max-width:768px) {
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+ 
+ .item6 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+}
+ 
+/* medium screens*/
+
+ @media screen and (max-width:550px) {
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+ 
+ .item6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+ }
+
+ .item5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+ }
+} 
+/*small screens*/
+
+@media screen and (max-width:375px) {
+  .grid-container > div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
