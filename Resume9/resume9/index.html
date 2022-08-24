@@ -1,67 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<!--Always remember to link your css style sheet in the dead tag.
-Also important to link the meta tag for the viewport to ensure the
- website is responsive-->
-
-
-  <!--placed my entire resume in a div to see how I will influence the
-  styling through bootstrap-->
-
-    <div class="col-12"><header</div>
-    <div class="row gx-0"><header</div>
-
-  <head>
+<head>
     <title>Willem Uys Resumé</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" 
+            integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" 
+            crossorigin="anonymous"></script>
 
   <!-- downloaded the bootstrap files to my local repository and
   linked these files to the head above and aslo to the body below.
-  Changes reflected immidiately in my resume-->
+  Changes reflected immediately in my resume-->
+</head>
 
-  </head>
+<body>
 
-<header id="heading">
-
-    <!--removed the image widht and height and added a img tag
-     in my css to control it for a responsive design.
-     Also added a container to the heading andsized it to represent
-     the full 12 colums-->
-  
-      <div class="container text-centre">
-        
-      </div>
-      <div class="container image">
-        <img src="images/profile_pic_big.png" 
-        class="image-"
-        alt="willem Profile picture"
-        id="profilephoto" />
-  
+  <div class="jumbotron text-center" style="margin-bottom:0">
+  <img src="Images/profile_pic_for final.jpg" alt="willem profile pic">
   <h1>Willem Uys</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente inventore commodi vero eveniet aliquid, provident, deserunt quia qui reprehenderit distinctio adipisci pariatur autem. Nulla iure quia ipsa architecto saepe.</p>
+  </div>
 
-  <p> I am a Healthcare Specialist and have achieved success in business development, healthcare professional networks and system design.     
- </header>
-</div>
-</div>
- 
-<main class="main">
-  
-  <!--add a container around certain divs for bootstrap-->
-
-  <div id="container">
-      
-  <nav>
-
+  <nav class="navbar fixed-left">
     <h2>Menu</h2>
-  
-    <ul class="container"> 
+  <!--start here tomorrow -changed the below class to navbar and the view 
+    changed. Investigate-->
+    <ul class="navbar"> 
      <li>  <a href="#education">Education</a></li>
      <li>  <a href="#experience">Experience</a></li>    
      <li>  <a href="#skills">Skills</a></li>
     </ul>
+
+  </nav>
+
+  
+
+
+
+    
 
   </nav>
   
@@ -168,10 +148,7 @@ Also important to link the meta tag for the viewport to ensure the
 linked these files to the head above and aslo to the body below.
 Changes reflected immidiately in my resume-->
 
- <script src="bootstrap/js/bootstrap.bundle.js"></script>
- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" 
- integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" 
- crossorigin="anonymous"></script>
+ 
 
   </body>
 
