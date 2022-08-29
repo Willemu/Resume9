@@ -10,9 +10,116 @@
             }
 
 #profilephoto {
-    display: inline-block; position: relative;
-    width: 125px;
-    height: 125px;
+    
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: 2px solid #D1603D;
-                }        
+                }
+
+footer {
+     padding: 1rem;
+    background-color: #343330;
+    background-image: url(../images/plain_blue_background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    list-style-type: none;
+        }
+  
+ /*animating the contact detail icon below, using keyframes below that*/       
+.icons {
+    width: 3rem;
+    margin: 2rem;
+    height: auto;
+    padding-top: 0.5rem;
+    animation-name: animationicons;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+                  }
+
+@keyframes animationicons {
+    0%   {border-radius: 0%;}
+    25%  {border-radius: 100%;
+            transform: rotate(90deg);}
+    50%  {background-color: blue;
+            transform: rotate(180deg);}
+    100% {background-color: gold;
+            transform: rotate(360deg);}
+                            }                  
+ 
+/*Important to specify a size for each column*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: grey;
+    padding: 10px;
+  }
+  
+  /*Now select all the divs that are children of the class
+  The grid template columns determines your layout and can be
+  replaced by a percentage as well i.e. auto auto 30% or 5px*/
+  
+  .grid-container > div {
+    font-family: sans-serif;
+    font: size 1.5em;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+                          }                            
+  
+  /*Now by using media quries you can style your grid
+ and make sure is has logic to follow when the device
+  sizes changes*/
+
+/* large screens*/
+
+ @media screen and (max-width:768px) {
+    .item1 {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+   
+   .item6 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  }
+   
+  /* medium screens*/
+  
+   @media screen and (max-width:550px) {
+    .item1 {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+   
+   .item6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+   }
+  
+   .item5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
+  } 
+  /*small screens*/
+  
+  @media screen and (max-width:375px) {
+    .grid-container > div{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }                        

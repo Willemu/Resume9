@@ -2,24 +2,26 @@
 <html>
 <head>
     <title>Willem Uys Resumé</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     
-    <!--Some styles elements is my html added, removed all css styling-->
+    <!--Some styles elements is my html added, removed all css styling
+    linked css back into my resume-->
     <style>
       aside{
         background-color: white;
-      }
+            }
       article{
         background-color: lightgray;
-      }
+              }
       footer{
         background-color: lightgray;
-      }
+              }
       header{
         background-color: lightgray;
-      }
+              }
     </style>
 
   <!-- downloaded the bootstrap files to my local repository and
@@ -113,13 +115,30 @@ in the same row and next to exch other-->
                 <li>PowerBI - Advanced</li>
               </ul>
             </p>
+            <!--Adding a css grid at the bottom of the main content. First I start 
+  by addind a div class in html and that then is followed div class items
+   that represents the contents of the grid-->
+
+    <h2>Hobbies</h2>
+
+    <!-- just added this section to play around with css grid and responsive
+    css for different device sizes-->
+          <div class="grid-container">
+              <div class="item1">Coding</div>
+              <div class="item2">Sport</div>
+              <div class="item3">Fishing</div>
+              <div class="item4">Hiking</div>
+              <div class="item5">Dancing</div>
+              <div class="item6">Singing</div>
+          </div>
+    
       </div>
     </div>
   </Aside>
 </body>
 </main>
 
-<footer class="container">
+<footer class="container" id="footer">
 
    <div class="row">
     <div class="col-12 text-center" style="padding: top 30px;">
