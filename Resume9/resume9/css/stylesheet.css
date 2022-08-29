@@ -1,1 +1,18 @@
 
+#heading {
+    font-family: sans-serif;
+    background-image: url(../images/plain_blue_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+            }
+
+#profilephoto {
+    display: inline-block; position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 2px solid #D1603D;
+                }        
