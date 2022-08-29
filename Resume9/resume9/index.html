@@ -5,12 +5,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" 
-            integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" 
-            crossorigin="anonymous"></script>
+    
+    <!--Some styles elements is my html added, removed all css styling-->
+    <style>
+      aside{
+        background-color: white;
+      }
+      article{
+        background-color: lightgray;
+      }
+      footer{
+        background-color: lightgray;
+      }
+      header{
+        background-color: lightgray;
+      }
+    </style>
 
   <!-- downloaded the bootstrap files to my local repository and
   linked these files to the head above and aslo to the body below.
@@ -19,126 +29,127 @@
 
 <body>
 
-    <div class="jumbotron text-center" style="margin-bottom:0">
-    <img src="Images/profile_pic_for final.jpg" alt="willem profile pic">
-  <h1>Willem Uys</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente inventore commodi vero eveniet aliquid, provident, deserunt quia qui reprehenderit distinctio adipisci pariatur autem. Nulla iure quia ipsa architecto saepe.</p>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <img src="Images/profile_pic_for final.jpg" class="img-circle" alt="willem profile pic">
+
+    <h1>Willem Uys</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente inventore commodi vero eveniet aliquid, provident, deserunt quia qui reprehenderit distinctio adipisci pariatur autem. Nulla iure quia ipsa architecto saepe.</p>
   </div>
 
-
-     
-<nav class="navbar fixed-left">
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-4"> 
-    <h2>Menu</h2>
-
-    <ul> 
-     <li>  <a href="#education">Education</a></li>
-     <li>  <a href="#experience">Experience</a></li>    
-     <li>  <a href="#skills">Skills</a></li>
-    </ul>
-   </div>
-  </nav>
-
-</body>
-
-  <div class="container" style="padding: 80px">
+<!--created a div container with an article and an aside, so that my menu and content is
+in the same row and next to exch other-->  
+<div class="container">
     <div class="row">
-      <div class="col-12">
-    
-      <p>I’m a positive, deadline driven individual that that can manage multiple projects simultaneously, solve complex problems, is always willing to take on new challenges and drive solutions. In addition, a positive attitude accompanied by a solution driven approach makes me ideal for designing system solutions, turning projects and key client accounts.</p> 
-      <p>Two and a half decades of experience in healthcare administration, provides me with a clear understanding of obstacles and solutions for this industry.</p>
 
-      <h2 id="education">Education</h2>
+        <article class="col-sm-3">
+          
+          <h2>Menu</h2>
+
+              <ul> 
+              <li>  <a href="#education">Education</a></li>
+              <li>  <a href="#experience">Experience</a></li>    
+              <li>  <a href="#skills">Skills</a></li>
+              </ul>
+ 
+        </article>
+
+        <Aside class="col-sm-9">  
+    
+            <p>I’m a positive, deadline driven individual that that can manage multiple projects simultaneously, solve complex problems, is always willing to take on new challenges and drive solutions. In addition, a positive attitude accompanied by a solution driven approach makes me ideal for designing system solutions, turning projects and key client accounts.</p> 
+            <p>Two and a half decades of experience in healthcare administration, provides me with a clear understanding of obstacles and solutions for this industry.</p>
+
+          <h2 id="education">Education</h2>
       
-        <h3> Code Space</h3>
-          <p>Front-end and back-end development Diploma. </p>
+          <h3> Code Space</h3>
+            <p>Front-end and back-end development Diploma. </p>
       
-        <h3> Discovery Institute</h3>
-          <p>
+          <h3> Discovery Institute</h3>
+            <p>
         <!--An unordered list with another unordered list within it-->
-          <ul>
-            <li>Management Academy</li>
+              <ul>
+                <li>Management Academy</li>
               <ul>
                 <li>License to Lead</li>
                 <li>Building and sustaining performing teams</li>
                 <li>Industrial relations & HIV</li>
               </ul>
-            <li>Six Sigma - yellow belt</li>
-            <li>Lean Six Sigma</li>
-            <li>Consultant toolkit</li>
-          </ul>   
-        </p>
+                <li>Six Sigma - yellow belt</li>
+                <li>Lean Six Sigma</li>
+                <li>Consultant toolkit</li>
+              </ul>   
+            </p>
 
-      <h3> Grade 12</h3>
-       <p> Ventersdorp Highschool </p>
-       <p> Maths, Accounting, Business</p>
+          <h3> Grade 12</h3>
+            <p> Ventersdorp Highschool </p>
+            <p> Maths, Accounting, Business</p>
 
-    <h2 id="experience">Experience</h2>
+          <h2 id="experience">Experience</h2>
 
-      <h3>SpesNet Global Group</h3>
-        <p>Group Executive: Business Operations</p>
-        <p>1 May 2014 - current</p>
-        <p>8 years</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores voluptatem corrupti? Sint, porro consequuntur eum cumque mollitia illo voluptas excepturi quas praesentium architecto rerum illum veritatis laborum, sunt dolorem!</p>
+          <h3>SpesNet Global Group</h3>
+            <p>Group Executive: Business Operations</p>
+            <p>1 May 2014 - current</p>
+            <p>8 years</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores voluptatem corrupti? Sint, porro consequuntur eum cumque mollitia illo voluptas excepturi quas praesentium architecto rerum illum veritatis laborum, sunt dolorem!</p>
       
-      <h3>Discovery Health</h3>
-        <p>Team Leader & Manager</p>
-        <p>1 July 1997 - 30 April 2014</p>
-        <p>16 years</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit corporis commodi ipsa veritatis reprehenderit, architecto consequuntur in totam esse, molestias, impedit eligendi! Adipisci assumenda voluptatum debitis cupiditate nisi iure totam.</p>
+          <h3>Discovery Health</h3>
+            <p>Team Leader & Manager</p>
+            <p>1 July 1997 - 30 April 2014</p>
+            <p>16 years</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit corporis commodi ipsa veritatis reprehenderit, architecto consequuntur in totam esse, molestias, impedit eligendi! Adipisci assumenda voluptatum debitis cupiditate nisi iure totam.</p>
         
-      <h3>Medikredit Integrated Healthcare</h3>
-        <p>Integration Specialist</p>
-        <p>1 September 2011 - 31 August 2012</p>
-        <p>1 year</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit corporis commodi ipsa veritatis reprehenderit, architecto consequuntur in totam esse, molestias, impedit eligendi! Adipisci assumenda voluptatum debitis cupiditate nisi iure totam.</p>
+          <h3>Medikredit Integrated Healthcare</h3>
+            <p>Integration Specialist</p>
+            <p>1 September 2011 - 31 August 2012</p>
+            <p>1 year</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit corporis commodi ipsa veritatis reprehenderit, architecto consequuntur in totam esse, molestias, impedit eligendi! Adipisci assumenda voluptatum debitis cupiditate nisi iure totam.</p>
         
-    <h2 id="skills">Skills</h2>
-      <p>
-        <ul>
-          <li>Excel - Intermediate</li>
-          <li>Word - Advanced</li>
-          <li>PowerPoint - Advanced</li>
-          <li>PowerBI - Advanced</li>
-        </ul>
-      </p>
+          <h2 id="skills">Skills</h2>
+            <p>
+              <ul>
+                <li>Excel - Intermediate</li>
+                <li>Word - Advanced</li>
+                <li>PowerPoint - Advanced</li>
+                <li>PowerBI - Advanced</li>
+              </ul>
+            </p>
+      </div>
     </div>
-  </div>
+  </Aside>
+</body>
+</main>
 
-  </main>
+<footer class="container">
 
- <footer class="container">
-  <div class="row">
-    <div class="col-12 text-center" style="padding: top 20px;">
+   <div class="row">
+    <div class="col-12 text-center" style="padding: top 30px;">
         <h3>Contact Details</h3>
     </div>
 
   <div class="row">
-    <div class="col-12 text-center" style="padding-top:50px">    
+    <div class="col-12 text-center" style="padding-top:20px">    
           <ul class="contacts">
             <!--comments-->
           
-          <a href="Tel:+(27)78.456.9477" class="imglink1" target="_blank">
+          <a href="Tel:+(27)78.456.9477" class="fontawesome" target="_blank">
               <img class="icons" src="Images\Mobilenumber.png"
               alt="willem mobile number"
               width="50px"/>
               <!--comments-->
           </a>          
            
-          <a href="https://www.linkedin.com/school/codespaceza/"class="imglink1" target="_blank">
+          <a href="https://www.linkedin.com/school/codespaceza/"class="fontawesome" target="_blank">
               <img class="icons" src="Images\Linkedin.png"
               alt="willem linkedin page"
               width="50px"/>
               <!--comments-->
           </a>
           
-          <a href="mailto:willem@spesnetgroup.com"class="imglink1"target="_blank">
-            <img class="icons" src="Images\email.png"
+          <a href="mailto:willem@spesnetgroup.com"class="fontawesome" target="_blank">
+            <img class="icons" src="Images\email.png"           
              alt="willem email address"
-             width="50px"/>
+             width="50px"
+                      />
+             
              <!--comments-->
           </a> 
 
@@ -146,6 +157,14 @@
     </div>      
   </div>  
  </footer>
+
+ <!--link the bootstrap in just befor you close the body tag-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" 
+            integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" 
+            crossorigin="anonymous"></script>
 </body>
 
 
