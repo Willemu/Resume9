@@ -1,32 +1,29 @@
 
 #heading {
-    font-family: sans-serif;
-    background-image: url(../images/plain_blue_background.jpg);
+    background-image: url;
     background-size: cover;
     background-position: center;
-    background-color: black;
-    padding: 1rem;
-    color: white;
+    background-color: ;
+    padding: 2rem;
+    margin: 3.8rem;
+    color: black;
             }
 
 #profilephoto {
     
     width: 140px;
     height: 140px;
-    border-radius: 50%;
-    border: 2px solid #D1603D;
+    
+    border: 2px solid darkblue;
                 }
 
 footer {
     padding: 0.5rem;
-    background-color: #343330;
-    background-image: url(../images/plain_blue_background.jpg);
+    background-color:;
+    background-image: url;
     background-size: cover;
     background-position: center;
-    text-align: center;
-    color: white;
-    justify-content: center;
-    list-style-type: none;
+    color: black;
         }
   
  /*animating the contact detail icon below, using keyframes below that*/       
@@ -124,3 +121,4 @@ footer {
       grid-column-end: 3;
     }
   }                        
+  
