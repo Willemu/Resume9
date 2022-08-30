@@ -18,7 +18,7 @@
                 }
 
 footer {
-     padding: 1rem;
+    padding: 0.5rem;
     background-color: #343330;
     background-image: url(../images/plain_blue_background.jpg);
     background-size: cover;
@@ -71,6 +71,7 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 20px;
+    margin: 2px;
                           }                            
   
   /*Now by using media quries you can style your grid
